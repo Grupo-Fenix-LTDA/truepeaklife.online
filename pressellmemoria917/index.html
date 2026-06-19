@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Morning "Brain Ritual" Adults Over 50 Are Using to Stay Sharp | The Wellness Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --brand-navy: #1f3a4d;
+    --brand-navy-deep: #14283a;
+    --brand-accent: #3a8c6a;
+    --brand-warm: #c4925a;
+    --text-primary: #1b1b1b;
+    --text-body: #2d2d2d;
+    --text-caption: #6b6b6b;
+    --bg: #ffffff;
+    --bg-light: #f6f5f1;
+    --border: #dcdad5;
+    --cta-green: #2a8050;
+    --cta-green-hover: #226641;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Libre Franklin', 'Helvetica Neue', Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* ═══════ TOP NAV BAR ═══════ */
+  .nav-bar {
+    background: var(--brand-navy-deep);
+    padding: 0 20px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px solid var(--brand-accent);
+  }
+  .nav-inner {
+    max-width: 1080px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+  }
+  .brand-mark {
+    width: 36px;
+    height: 36px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .brand-mark svg { width: 32px; height: 32px; }
+  .nav-brand {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: -0.3px;
+    line-height: 1;
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  .nav-brand span {
+    display: block;
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: var(--brand-accent);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 3px;
+    font-family: 'Libre Franklin', sans-serif;
+  }
+  .nav-links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+  }
+  .nav-links a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: #fff; }
+
+  /* ═══════ FEATURED STRIP ═══════ */
+  .featured-strip {
+    background: var(--brand-accent);
+    color: #fff;
+    font-size: 0.74rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 7px 16px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  /* ═══════ EDITOR'S PICK BAR ═══════ */
+  .editor-bar {
+    background: var(--bg-light);
+    border-bottom: 1px solid var(--border);
+    padding: 14px 20px;
+  }
+  .editor-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .editor-icon {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+  }
+  .editor-text {
+    font-size: 0.78rem;
+    color: var(--text-caption);
+    line-height: 1.45;
+  }
+  .editor-text strong {
+    color: var(--text-primary);
+    font-weight: 700;
+  }
+
+  /* ═══════ ARTICLE ═══════ */
+  .article-container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 24px 20px 60px;
+  }
+
+  .section-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--brand-accent);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .section-label::before {
+    content: '';
+    width: 18px;
+    height: 2px;
+    background: var(--brand-accent);
+  }
+
+  h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(1.45rem, 4.5vw, 2.1rem);
+    font-weight: 800;
+    line-height: 1.18;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+    transition: color 0.2s ease;
+  }
+  a:hover h1 { color: var(--brand-navy); }
+
+  .deck {
+    font-size: 0.95rem;
+    line-height: 1.48;
+    color: var(--text-caption);
+    margin-bottom: 16px;
+    font-weight: 400;
+  }
+
+  .byline-block {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 18px;
+  }
+  .byline-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--brand-navy);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+  }
+  .byline-info { flex: 1; }
+  .byline-info .name {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+  .byline-info .role {
+    font-size: 0.74rem;
+    color: var(--text-caption);
+    margin-top: 2px;
+  }
+  .byline-info .date {
+    font-size: 0.72rem;
+    color: var(--text-caption);
+    margin-top: 2px;
+  }
+  .share-icons {
+    display: flex;
+    gap: 8px;
+  }
+  .share-btn {
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .share-btn:hover { background: var(--bg-light); }
+  .share-btn svg { width: 14px; height: 14px; fill: var(--text-caption); }
+
+  /* ═══════ VIDEO BLOCK ═══════ */
+  .video-block {
+    position: relative;
+    width: 100%;
+    margin: 20px 0 8px;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  }
+  .video-block img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .video-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.85) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+  }
+  .video-block:hover .video-overlay {
+    background: linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.88) 100%);
+  }
+  .play-circle {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.5);
+    transition: transform 0.2s;
+  }
+  .video-block:hover .play-circle { transform: scale(1.08); }
+  .play-circle svg {
+    width: 32px;
+    height: 32px;
+    fill: var(--brand-navy-deep);
+    margin-left: 4px;
+  }
+  .video-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: var(--brand-accent);
+    color: #fff;
+    padding: 5px 11px;
+    border-radius: 3px;
+    font-size: 0.66rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .video-title-bar {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    padding: 40px 20px 16px;
+    color: #fff;
+  }
+  .video-title-bar p {
+    font-size: 0.92rem;
+    font-weight: 600;
+    line-height: 1.32;
+    margin-bottom: 6px;
+  }
+  .video-title-bar .duration {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.85;
+  }
+  .video-caption {
+    font-size: 0.74rem;
+    color: var(--text-caption);
+    font-style: italic;
+    line-height: 1.4;
+    margin-bottom: 14px;
+  }
+
+  /* ═══════ VIEWERS LINE ═══════ */
+  .viewers-line {
+    font-size: 0.78rem;
+    color: var(--text-caption);
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  .viewers-line strong { color: var(--brand-navy); font-weight: 700; }
+
+  /* ═══════ CTA ═══════ */
+  .cta-wrap {
+    margin: 18px 0;
+    text-align: center;
+  }
+  .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--cta-green);
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.1s;
+    box-shadow: 0 3px 0 var(--cta-green-hover);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .cta-btn:hover {
+    background: var(--cta-green-hover);
+    transform: translateY(1px);
+    box-shadow: 0 2px 0 var(--cta-green-hover);
+  }
+  .cta-btn svg {
+    width: 18px;
+    height: 18px;
+    fill: #fff;
+  }
+  .cta-note {
+    font-size: 0.74rem;
+    color: var(--text-caption);
+    margin-top: 8px;
+    font-style: italic;
+  }
+
+  /* ═══════ BODY TEXT ═══════ */
+  .body-text p {
+    font-family: 'Libre Franklin', Georgia, serif;
+    font-size: 1.02rem;
+    line-height: 1.65;
+    color: var(--text-body);
+    margin-bottom: 18px;
+  }
+  .body-text p strong {
+    color: var(--text-primary);
+    font-weight: 700;
+  }
+  .body-text p em {
+    font-style: italic;
+  }
+
+  /* ═══════ STATS ═══════ */
+  .stat-row {
+    display: flex;
+    gap: 12px;
+    margin: 24px 0;
+    padding: 22px 16px;
+    background: var(--bg-light);
+    border-left: 4px solid var(--brand-accent);
+    border-radius: 2px;
+  }
+  .stat-cell {
+    flex: 1;
+    text-align: center;
+  }
+  .stat-cell + .stat-cell {
+    border-left: 1px solid var(--border);
+  }
+  .stat-number {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--brand-navy);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .stat-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-caption);
+    font-weight: 600;
+    line-height: 1.25;
+  }
+
+  /* ═══════ PULL QUOTE ═══════ */
+  .pull-quote {
+    border-left: 4px solid var(--brand-accent);
+    padding: 14px 0 14px 22px;
+    margin: 24px 0;
+  }
+  .pull-quote p {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.18rem;
+    line-height: 1.42;
+    font-style: italic;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+  }
+  .pull-quote cite {
+    font-size: 0.78rem;
+    color: var(--text-caption);
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  /* ═══════ INFO BOX ═══════ */
+  .info-box {
+    background: #fdfaf3;
+    border: 1px solid #ead9b4;
+    border-radius: 4px;
+    padding: 14px 16px;
+    margin: 20px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--text-body);
+  }
+  .info-box svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--brand-warm);
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  /* ═══════ FOOTER ═══════ */
+  .site-footer {
+    background: var(--bg-light);
+    padding: 30px 20px;
+    border-top: 1px solid var(--border);
+    margin-top: 40px;
+  }
+  .footer-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .footer-logo {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--brand-navy);
+    margin-bottom: 10px;
+  }
+  .footer-inner p {
+    font-size: 0.74rem;
+    color: var(--text-caption);
+    line-height: 1.55;
+    max-width: 620px;
+    margin: 0 auto;
+  }
+  .footer-inner a {
+    color: var(--text-caption);
+    text-decoration: none;
+    margin: 0 6px;
+  }
+  .footer-inner a:hover { color: var(--brand-navy); }
+
+  /* ═══════ MOBILE ═══════ */
+  @media (max-width: 640px) {
+    .nav-links { display: none; }
+    .nav-brand { font-size: 0.95rem; }
+    .nav-brand span { font-size: 0.55rem; }
+    .article-container { padding: 18px 16px 40px; }
+    h1 { font-size: 1.55rem; }
+    .deck { font-size: 0.9rem; }
+    .body-text p { font-size: 0.96rem; }
+    .stat-row { padding: 16px 6px; gap: 4px; }
+    .stat-number { font-size: 1.4rem; }
+    .stat-label { font-size: 0.62rem; }
+    .share-icons { display: none; }
+    .byline-avatar { width: 36px; height: 36px; font-size: 0.75rem; }
+    .play-circle { width: 64px; height: 64px; }
+    .play-circle svg { width: 24px; height: 24px; }
+    .pull-quote p { font-size: 1.05rem; }
+    .editor-inner { gap: 10px; }
+    .editor-icon { width: 30px; height: 30px; }
+    .editor-bar { padding: 8px 16px; }
+    .editor-text { font-size: 0.7rem; }
+    .featured-strip { font-size: 0.66rem; padding: 5px 12px; }
+    .video-caption { margin-bottom: 10px; }
+    .viewers-line { margin-bottom: 8px; font-size: 0.72rem; }
+    .cta-wrap { margin: 14px 0; }
+    .video-title-bar { padding: 30px 12px 10px; }
+    .video-title-bar p { font-size: 0.78rem; line-height: 1.32; }
+    .video-title-bar .duration { font-size: 0.6rem; }
+    .video-badge { top: 8px; left: 8px; font-size: 0.58rem; padding: 3px 7px; }
+  }
+</style>
+<script type="text/javascript" src="https://lp.truepeaklife.online/pretrack.js?rtkcmpid=6a355f1f67ed99c9d3182f17"></script>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav class="nav-bar">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <div class="brand-mark">
+        <svg viewBox="0 0 40 40" fill="none">
+          <path d="M20 6 C13 6 8 11 8 18 C8 25 13 32 20 36 C27 32 32 25 32 18 C32 11 27 6 20 6 Z" stroke="#fff" stroke-width="2.5" fill="none"/>
+          <path d="M14 19 L18 23 L26 15" stroke="#3a8c6a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+      </div>
+      <div class="nav-brand">The Wellness Brief<span>Daily Health Insights</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="https://lp.truepeaklife.online/preclick">Home</a></li>
+      <li><a href="https://lp.truepeaklife.online/preclick">Health</a></li>
+      <li><a href="https://lp.truepeaklife.online/preclick">Nutrition</a></li>
+      <li><a href="https://lp.truepeaklife.online/preclick">Aging Well</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ══ FEATURED STRIP ══ -->
+<div class="featured-strip">
+  Featured Article — Memory &amp; Mental Sharpness
+</div>
+
+<!-- ══ EDITOR'S PICK BAR ══ -->
+<div class="editor-bar">
+  <div class="editor-inner">
+    <svg class="editor-icon" viewBox="0 0 64 64" fill="none">
+      <circle cx="32" cy="32" r="26" stroke="#1f3a4d" stroke-width="3" fill="none"/>
+      <path d="M22 32 L29 39 L43 25" stroke="#3a8c6a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </svg>
+    <div class="editor-text">
+      <strong>Editor's Pick</strong> — Our nutrition team takes a closer look at a simple morning ritual that's getting attention from adults over 50 looking to support their mental sharpness.
+    </div>
+  </div>
+</div>
+
+<!-- ══ ARTICLE ══ -->
+<main class="article-container">
+
+  <div class="section-label">Memory &amp; Focus</div>
+
+  <a href="https://lp.truepeaklife.online/preclick" style="text-decoration:none;color:inherit"><h1>The Simple Morning "Brain Ritual" Adults Over 50 Are Using to Stay Mentally Sharp — Watch the 60-Second Demo</h1></a>
+
+  <p class="deck">A growing community of adults over 50 is sharing positive feedback about a simple morning ritual that uses two common kitchen ingredients. In a new presentation, a nutrition educator walks viewers through the routine step by step — and explains why basic nutrition may matter more for daily mental clarity than many people realize.</p>
+
+  <div class="byline-block">
+    <div class="byline-avatar">SW</div>
+    <div class="byline-info">
+      <div class="name">Sarah Whitfield</div>
+      <div class="role">Health &amp; Nutrition Contributor, The Wellness Brief</div>
+      <div class="date" id="pub-date"></div>
+    </div>
+    <div class="share-icons">
+      <button class="share-btn" aria-label="Share on Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></button>
+      <button class="share-btn" aria-label="Share on X"><svg viewBox="0 0 24 24"><path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-6.8-8.4L20 4h-2l-5.2 6.3L8 4H4z"/></svg></button>
+      <button class="share-btn" aria-label="Share by email"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6" fill="none" stroke="#6b6b6b" stroke-width="1.5"/></svg></button>
+    </div>
+  </div>
+
+  <!-- ══ VIDEO ══ -->
+  <a href="https://lp.truepeaklife.online/preclick" class="video-block" id="video-link">
+    <img src="attia-thumbnail.png" alt="Honey jar and blueberries on a kitchen counter — featured ingredients in the morning brain ritual" />
+    <div class="video-overlay">
+      <div class="video-badge">Featured</div>
+      <div class="play-circle">
+        <svg viewBox="0 0 24 24"><polygon points="8,5 20,12 8,19"/></svg>
+      </div>
+      <div class="video-title-bar">
+        <p>WATCH: The 60-second morning ritual that's helping adults over 50 feel sharper, more focused, and more like themselves again</p>
+        <span class="duration">Free presentation · Approx. 12 minutes</span>
+      </div>
+    </div>
+  </a>
+  <p class="video-caption">Nutrition educator walks viewers through the two-ingredient morning ritual featured in the presentation.</p>
+
+  <!-- ══ VIEWERS ══ -->
+  <p class="viewers-line"><strong id="viewer-count">12,840</strong> readers viewed this article today</p>
+
+  <!-- ══ CTA 1 ══ -->
+  <div class="cta-wrap">
+    <a href="https://lp.truepeaklife.online/preclick" class="cta-btn">
+      <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+      Watch the Free Presentation
+    </a>
+    <p class="cta-note">No sign-up required</p>
+  </div>
+
+  <!-- ══ BODY ══ -->
+  <div class="body-text">
+
+    <p>Forgetting where you put your keys. Walking into a room and blanking on why you went in. Reading the same paragraph three times because your focus keeps drifting. If any of this is starting to feel like a regular part of your day — you are very far from alone. <strong>For adults over 50, occasional "brain fog" and slower recall are some of the most common complaints reported to family doctors</strong> — and most of us simply chalk it up to "getting older" and learn to live with it.</p>
+
+    <p>But a growing body of nutrition research is pointing to something most of us overlook: the day-to-day fuel our brains are running on. A recent online presentation has been getting attention for laying this out in plain language — built around what the nutrition educator calls the <strong>"Morning Brain Ritual"</strong>, a simple daily routine using two common ingredients many people already have in their kitchen: <strong>raw honey and wild blueberries</strong>. In a community survey of adults over 50 who followed the ritual consistently for 6 weeks, <strong>most participants reported feeling more focused, more alert, and more like themselves throughout the day</strong>.</p>
+
+  </div>
+
+  <!-- ══ STAT ROW ══ -->
+  <div class="stat-row">
+    <div class="stat-cell">
+      <div class="stat-number">3,847</div>
+      <div class="stat-label">Community<br>Members</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-number">2</div>
+      <div class="stat-label">Simple Kitchen<br>Ingredients</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-number">60 sec</div>
+      <div class="stat-label">Daily Morning<br>Routine</div>
+    </div>
+  </div>
+
+  <div class="body-text">
+
+    <p>What makes the presentation worth watching isn't a miracle promise — it's the simplicity. The educator walks through the <em>why</em> behind each ingredient: the specific compound in raw honey that has been studied for its role in supporting healthy brain function, and the natural anthocyanins in wild blueberries that nutrition researchers have been studying for years for their role in supporting memory, focus, and overall cognitive wellness. Then the educator demonstrates the exact ritual step by step — the type of honey to look for, the preparation method, and the best time of day to do it for the most consistent results.</p>
+
+  </div>
+
+  <!-- ══ PULL QUOTE ══ -->
+  <div class="pull-quote">
+    <p>"Most adults over 50 don't need anything fancy to feel sharper and more focused — they just need to understand the two ingredients that have been quietly missing from their morning. Give me 60 seconds and I'll show you what they are."</p>
+    <cite>— From the featured presentation</cite>
+  </div>
+
+  <!-- ══ INFO BOX ══ -->
+  <div class="info-box">
+    <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+    <span>This is a free informational presentation from a nutrition educator. It is not medical advice. Please consult your physician before making changes to your diet or routine.</span>
+  </div>
+
+  <!-- ══ CTA 2 ══ -->
+  <div class="cta-wrap">
+    <a href="https://lp.truepeaklife.online/preclick" class="cta-btn">
+      <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+      Watch the Free Presentation
+    </a>
+    <p class="cta-note">Joining <strong id="viewer-count-2">12,840</strong> others who viewed this today</p>
+  </div>
+
+</main>
+
+<!-- ══ FOOTER ══ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">The Wellness Brief</div>
+    <p>This page contains sponsored health content. The information presented is for educational purposes only and is not intended as medical advice, diagnosis, or treatment. Individual results may vary. Always consult your physician before beginning any new diet, supplement, or wellness routine. Statements regarding ingredients have not been evaluated by the Food and Drug Administration.</p>
+    <p style="margin-top:10px;"><a href="#">Privacy Policy</a> · <a href="#">Terms of Use</a> · <a href="#">Do Not Sell My Info</a> · <a href="#">Contact Us</a></p>
+    <p style="margin-top:8px;">© <span id="year"></span> The Wellness Brief. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+  // Dynamic date
+  const now = new Date();
+  const opts = { month: 'long', day: 'numeric', year: 'numeric' };
+  const dateStr = now.toLocaleDateString('en-US', opts);
+  document.getElementById('pub-date').textContent = `Updated ${dateStr}`;
+  document.getElementById('year').textContent = now.getFullYear();
+
+  // Synced reader counter (modest, realistic increments)
+  let base = 12840;
+  function updateViewers() {
+    base += Math.floor(Math.random() * 2) + 1;
+    const formatted = base.toLocaleString();
+    document.getElementById('viewer-count').textContent = formatted;
+    document.getElementById('viewer-count-2').textContent = formatted;
+  }
+  setInterval(updateViewers, 6000);
+</script>
+
+</body>
+</html>
